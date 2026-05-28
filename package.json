@@ -1,0 +1,41 @@
+{
+  "name": "routeiq-react-prototype",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RouteIQ Planner React dashboard prototype for developer handoff.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "server:dev": "node server/index.js",
+    "server:health": "node -e \"fetch('http://localhost:8787/api/health').then(r=>r.text()).then(console.log)\"",
+    "db:migrate:dry-run": "node server/db/migrate.js",
+    "db:migrate": "node server/db/migrate.js",
+    "db:seed:dry-run": "node server/seed/seed.js",
+    "db:seed": "node server/seed/seed.js",
+    "test:integration": "node server/tests/integrationSmokeTest.js",
+    "test:backend": "npm run test:integration",
+    "staging:check": "npm run build && npm run test:integration",
+    "start": "node server/index.js",
+    "server:start": "node server/index.js",
+    "staging:pilot-import": "node server/importWorkflow/pilotDataImportWorkflow.js",
+    "staging:smoke": "node server/tests/stagingSmokeTestRunner.js",
+    "staging:p42": "npm run staging:pilot-import && npm run staging:smoke",
+    "staging:hosted-smoke": "node scripts/hostedStagingSmokeTest.js",
+    "deploy:db:migrate": "ROUTEIQ_DATABASE_MODE=postgres ROUTEIQ_RUN_MIGRATIONS=true node server/db/migrate.js",
+    "deploy:db:seed": "ROUTEIQ_DATABASE_MODE=postgres node server/seed/seed.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17",
+    "postcss": "8.4.49",
+    "autoprefixer": "10.4.20"
+  },
+  "type": "module"
+}

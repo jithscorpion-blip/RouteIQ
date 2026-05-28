@@ -1,0 +1,4 @@
+order_no,customer_code,depot_code,cases,weight_kg,cbm,priority,delivery_window
+ORD-2031,CUST-001,MCT-DC,55,650,2.1,High,08:00-12:00
+ORD-2034,CUST-002,MCT-DC,26,300,1.0,Medium,10:00-15:00
+ORD-2042,CUST-003,SOH-DC,18,210,0.8,Low,12:00-17:00

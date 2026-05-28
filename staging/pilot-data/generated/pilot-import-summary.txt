@@ -1,0 +1,7 @@
+RouteIQ P42 Pilot Import Workflow
+Mode: validate-only-no-database-write
+Status: PASS
+Rows: 12/12 valid
+Errors: 0
+Warnings: 0
+Preview: staging/pilot-data/generated/pilot-import-preview.json

@@ -1,0 +1,4 @@
+customer_code,customer_name,depot_code,geo_zone,latitude,longitude,service_minutes,priority
+CUST-001,ABC Hypermarket,MCT-DC,MCT,23.5880,58.3829,15,High
+CUST-002,Seeb Grocery,MCT-DC,MCT,23.6691,58.1891,10,Medium
+CUST-003,Sohar Cafe,SOH-DC,SOH,24.3420,56.7299,8,Low

@@ -1,0 +1,196 @@
+{
+  "ok": true,
+  "startedAt": "2026-05-28T20:50:49.121Z",
+  "completedAt": "2026-05-28T20:50:49.124Z",
+  "mode": "validate-only-no-database-write",
+  "sourceDirectory": "/mnt/data/routeiq_p56/staging/pilot-data",
+  "totals": {
+    "entities": 4,
+    "rows": 12,
+    "validRows": 12,
+    "errors": 0,
+    "warnings": 0
+  },
+  "entities": [
+    {
+      "entityName": "customers",
+      "fileName": "customers_sample.csv",
+      "found": true,
+      "totalRows": 3,
+      "validRows": 3,
+      "ok": true,
+      "validation": {
+        "ok": true,
+        "entityName": "customers",
+        "totalRows": 3,
+        "validRows": 3,
+        "errors": [],
+        "warnings": []
+      },
+      "previewRows": [
+        {
+          "customerCode": "CUST-001",
+          "customerName": "ABC Hypermarket",
+          "depotCode": "MCT-DC",
+          "geoZone": "MCT",
+          "latitude": 23.588,
+          "longitude": 58.3829,
+          "serviceMinutes": 15,
+          "priority": "High"
+        },
+        {
+          "customerCode": "CUST-002",
+          "customerName": "Seeb Grocery",
+          "depotCode": "MCT-DC",
+          "geoZone": "MCT",
+          "latitude": 23.6691,
+          "longitude": 58.1891,
+          "serviceMinutes": 10,
+          "priority": "Medium"
+        },
+        {
+          "customerCode": "CUST-003",
+          "customerName": "Sohar Cafe",
+          "depotCode": "SOH-DC",
+          "geoZone": "SOH",
+          "latitude": 24.342,
+          "longitude": 56.7299,
+          "serviceMinutes": 8,
+          "priority": "Low"
+        }
+      ]
+    },
+    {
+      "entityName": "orders",
+      "fileName": "orders_sample.csv",
+      "found": true,
+      "totalRows": 3,
+      "validRows": 3,
+      "ok": true,
+      "validation": {
+        "ok": true,
+        "entityName": "orders",
+        "totalRows": 3,
+        "validRows": 3,
+        "errors": [],
+        "warnings": []
+      },
+      "previewRows": [
+        {
+          "orderNo": "ORD-2031",
+          "customerCode": "CUST-001",
+          "depotCode": "MCT-DC",
+          "cases": 55,
+          "weightKg": 650,
+          "cbm": 2.1,
+          "priority": "High",
+          "deliveryWindow": "08:00-12:00"
+        },
+        {
+          "orderNo": "ORD-2034",
+          "customerCode": "CUST-002",
+          "depotCode": "MCT-DC",
+          "cases": 26,
+          "weightKg": 300,
+          "cbm": 1,
+          "priority": "Medium",
+          "deliveryWindow": "10:00-15:00"
+        },
+        {
+          "orderNo": "ORD-2042",
+          "customerCode": "CUST-003",
+          "depotCode": "SOH-DC",
+          "cases": 18,
+          "weightKg": 210,
+          "cbm": 0.8,
+          "priority": "Low",
+          "deliveryWindow": "12:00-17:00"
+        }
+      ]
+    },
+    {
+      "entityName": "vehicles",
+      "fileName": "vehicles_sample.csv",
+      "found": true,
+      "totalRows": 3,
+      "validRows": 3,
+      "ok": true,
+      "validation": {
+        "ok": true,
+        "entityName": "vehicles",
+        "totalRows": 3,
+        "validRows": 3,
+        "errors": [],
+        "warnings": []
+      },
+      "previewRows": [
+        {
+          "vehicleCode": "VH-102",
+          "vehicleName": "VH-102",
+          "depotCode": "MCT-DC",
+          "maxWeightKg": 5000,
+          "maxCbm": 18,
+          "maxEf": 100
+        },
+        {
+          "vehicleCode": "VH-118",
+          "vehicleName": "VH-118",
+          "depotCode": "MCT-DC",
+          "maxWeightKg": 4500,
+          "maxCbm": 16,
+          "maxEf": 100
+        },
+        {
+          "vehicleCode": "VH-221",
+          "vehicleName": "VH-221",
+          "depotCode": "SOH-DC",
+          "maxWeightKg": 4000,
+          "maxCbm": 14,
+          "maxEf": 100
+        }
+      ]
+    },
+    {
+      "entityName": "routes",
+      "fileName": "routes_sample.csv",
+      "found": true,
+      "totalRows": 3,
+      "validRows": 3,
+      "ok": true,
+      "validation": {
+        "ok": true,
+        "entityName": "routes",
+        "totalRows": 3,
+        "validRows": 3,
+        "errors": [],
+        "warnings": []
+      },
+      "previewRows": [
+        {
+          "routeId": "RT-001",
+          "depot": "MCT-DC",
+          "vehicleCode": "VH-102",
+          "driverName": "Mohammed Ali",
+          "plannedKm": "",
+          "plannedMinutes": ""
+        },
+        {
+          "routeId": "RT-002",
+          "depot": "MCT-DC",
+          "vehicleCode": "VH-118",
+          "driverName": "Saeed Khan",
+          "plannedKm": "",
+          "plannedMinutes": ""
+        },
+        {
+          "routeId": "RT-003",
+          "depot": "SOH-DC",
+          "vehicleCode": "VH-221",
+          "driverName": "Rashid Omar",
+          "plannedKm": "",
+          "plannedMinutes": ""
+        }
+      ]
+    }
+  ]
+}

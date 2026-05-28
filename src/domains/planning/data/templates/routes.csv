@@ -1,0 +1,3 @@
+routeNo,depot,tripNo,vehicle,vehicleType,driver,stops,casesPct,weightPct,cbmPct,efPct,routeHours,remainingDuty,costPerTrip,costPerCase,redeliveryCost,warnings
+RT-001,MCT-DC,1,VH-102,3 Ton Truck,Mohammed Ali,18,126,91,84,88,7.2,2.8,42.6,0.168,0,
+RT-002,MCT-DC,1,VH-118,Van,Saeed Khan,14,104,103,79,82,8.9,0.6,39.8,0.212,0.28,Weight exceeded by 240 KG

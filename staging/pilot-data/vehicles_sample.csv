@@ -1,0 +1,4 @@
+vehicle_code,depot_code,plate_no,max_cases,max_weight_kg,max_cbm,max_hours
+VH-102,MCT-DC,TEST-102,500,5000,18,9
+VH-118,MCT-DC,TEST-118,450,4500,16,9
+VH-221,SOH-DC,TEST-221,400,4000,14,9

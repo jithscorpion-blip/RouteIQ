@@ -1,0 +1,152 @@
+/**
+ * Sample imported planning data.
+ * Replace these arrays later with CSV/JSON upload output or API response data.
+ */
+
+import type {
+  ImportedCustomerRecord,
+  ImportedOrderRecord,
+  ImportedRouteRecord,
+  ImportedVehicleRecord,
+} from "./importContracts";
+
+export const SAMPLE_IMPORTED_CUSTOMERS: ImportedCustomerRecord[] = [
+  {
+    customerCode: "CUS-MCT-001",
+    customerName: "ABC Hypermarket",
+    geoZone: "MCT",
+    depot: "MCT-DC",
+    latitude: 23.590,
+    longitude: 58.405,
+    serviceMinutes: 18,
+    deliveryWindowStart: "08:00",
+    deliveryWindowEnd: "12:00",
+    notes: "Main receiving gate",
+  },
+  {
+    customerCode: "CUS-MCT-002",
+    customerName: "Seeb Grocery",
+    geoZone: "MCT",
+    depot: "MCT-DC",
+    latitude: 23.625,
+    longitude: 58.220,
+    serviceMinutes: 12,
+    deliveryWindowStart: "09:00",
+    deliveryWindowEnd: "13:00",
+  },
+  {
+    customerCode: "CUS-SOH-001",
+    customerName: "Sohar Cafe",
+    geoZone: "SOH",
+    depot: "SOH-DC",
+    latitude: 24.345,
+    longitude: 56.735,
+    serviceMinutes: 10,
+  },
+];
+
+export const SAMPLE_IMPORTED_ORDERS: ImportedOrderRecord[] = [
+  {
+    orderNo: "ORD-2031",
+    customerCode: "CUS-MCT-001",
+    customerName: "ABC Hypermarket",
+    geoZone: "MCT",
+    depot: "MCT-DC",
+    cases: 55,
+    weightKg: 660,
+    cbm: 2.4,
+    priority: "High",
+    type: "Normal",
+    requestedDeliveryDate: "2026-05-29",
+  },
+  {
+    orderNo: "ORD-2034",
+    customerCode: "CUS-MCT-002",
+    customerName: "Seeb Grocery",
+    geoZone: "MCT",
+    depot: "MCT-DC",
+    cases: 26,
+    weightKg: 312,
+    cbm: 1.1,
+    priority: "Medium",
+    type: "Re-delivery",
+    requestedDeliveryDate: "2026-05-29",
+  },
+  {
+    orderNo: "ORD-2042",
+    customerCode: "CUS-SOH-001",
+    customerName: "Sohar Cafe",
+    geoZone: "SOH",
+    depot: "SOH-DC",
+    cases: 18,
+    weightKg: 216,
+    cbm: 0.8,
+    priority: "Low",
+    type: "Pending",
+    requestedDeliveryDate: "2026-05-29",
+  },
+];
+
+export const SAMPLE_IMPORTED_ROUTES: ImportedRouteRecord[] = [
+  {
+    routeNo: "RT-001",
+    depot: "MCT-DC",
+    tripNo: 1,
+    vehicle: "VH-102",
+    vehicleType: "3 Ton Truck",
+    driver: "Mohammed Ali",
+    stops: 18,
+    casesPct: 126,
+    weightPct: 91,
+    cbmPct: 84,
+    efPct: 88,
+    routeHours: 7.2,
+    remainingDuty: 2.8,
+    costPerTrip: 42.6,
+    costPerCase: 0.168,
+    redeliveryCost: 0,
+    warnings: "",
+  },
+  {
+    routeNo: "RT-002",
+    depot: "MCT-DC",
+    tripNo: 1,
+    vehicle: "VH-118",
+    vehicleType: "Van",
+    driver: "Saeed Khan",
+    stops: 14,
+    casesPct: 104,
+    weightPct: 103,
+    cbmPct: 79,
+    efPct: 82,
+    routeHours: 8.9,
+    remainingDuty: 0.6,
+    costPerTrip: 39.8,
+    costPerCase: 0.212,
+    redeliveryCost: 0.28,
+    warnings: "Weight exceeded by 240 KG",
+  },
+];
+
+export const SAMPLE_IMPORTED_VEHICLES: ImportedVehicleRecord[] = [
+  {
+    vehicle: "VH-102",
+    depot: "MCT-DC",
+    vehicleType: "3 Ton Truck",
+    maxWeightKg: 3000,
+    maxCbm: 18,
+    maxCases: 900,
+    driver: "Mohammed Ali",
+    active: true,
+  },
+  {
+    vehicle: "VH-118",
+    depot: "MCT-DC",
+    vehicleType: "Van",
+    maxWeightKg: 1200,
+    maxCbm: 8,
+    maxCases: 350,
+    driver: "Saeed Khan",
+    active: true,
+  },
+];

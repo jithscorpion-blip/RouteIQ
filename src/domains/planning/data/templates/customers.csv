@@ -1,0 +1,3 @@
+customerCode,customerName,geoZone,depot,latitude,longitude,serviceMinutes,deliveryWindowStart,deliveryWindowEnd,notes
+CUS-MCT-001,ABC Hypermarket,MCT,MCT-DC,23.590,58.405,18,08:00,12:00,Main receiving gate
+CUS-MCT-002,Seeb Grocery,MCT,MCT-DC,23.625,58.220,12,09:00,13:00,
